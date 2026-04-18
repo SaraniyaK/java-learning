@@ -1,5 +1,5 @@
 import java.util.*;
-public class StudentList {
+public class StudentsList {
     public static void main(String [] args){
         System.out.println("STUDENT LIST MANAGER");
         Scanner sc =new Scanner(System.in);
