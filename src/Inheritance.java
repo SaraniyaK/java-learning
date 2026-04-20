@@ -11,15 +11,23 @@ class Students extends Person{
     void showMark(){
         System.out.println(name+" Scored "+mark);
     }
+    @Override
+    void display(){
+        System.out.println("Student, Name: "+name+" age: "+age);
+    }
 }
 class Teachers extends Person{
     String subject;
     void showSubject(){
         System.out.println(name+" is Teaching "+subject);
     }
+    @Override
+    void display(){
+        System.out.println("Teacher, Name: "+name+" Age: "+age);
+    }
 }
 public class Inheritance {
-    public static void main(String[] args){                             
+    public static void main(String[] args){
         Scanner sc= new Scanner(System.in);
 
         Students s1 =new Students();
